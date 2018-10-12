@@ -21,7 +21,10 @@ public class OrderController {
         return "Hello EUREKA-CLIENT-USER";
     }
 
-
+    @GetMapping(value = "/hello")
+    public String hello() {
+        return "Hello FORM  EUREKA-CLIENT-USER ";
+    }
 
     @GetMapping(value = "/user/orders")
     public String getUserOrders(@RequestParam int userId) {
